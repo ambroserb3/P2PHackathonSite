@@ -12,6 +12,10 @@ body{
 	overflow: hidden;
 }
 
+.form{
+	min-height: 75vh;
+}
+
 #landing {
 	margin: auto;
 	padding-left: 3%;
@@ -28,6 +32,9 @@ body{
 
 .row span {
 	display: inline-block;
+}
+.row {
+	flex-wrap: nowrap;
 }
 #landing-img {
 	max-height: 712px;
@@ -57,7 +64,7 @@ body{
 /* Header */
 
 header #logo {
-	max-height: 100px;
+	max-height: 75px;
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
@@ -75,8 +82,8 @@ header a {
 }
 
 header li {
-	float: left;
 	display: inline;
+	/* float: left; */
 	padding: 0 0px 0 40px; 
 }
 
@@ -190,6 +197,11 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 	background-color: #5603A6;
 }
 
+
+.scheduleIMG {
+	max-width: 100%;
+	max-height: 45vh;
+}
 
 /* FAQ */
 
