@@ -10,23 +10,19 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-       <!-- Bootstrap CDN -->
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-       <!-- Bootstrap scripts -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <!-- Bootstrap CSS -->
+       <link href="bootstrap.css" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css">
         
         <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="bootstrap.js"></script>
 
 
     </head>
@@ -36,21 +32,33 @@
         <![endif]-->
         
         <header class="background-blue">
-            <div class="container background-blue">
-                <div id="branding">
-                    <img id="logo" src="images/logo.png">
-                </div>
-                <nav>
-                    <ul>
-                        <!--<li><a href="#">Home</a></li>-->
+            <div class="container">
+            <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+                <div class="row">
+                    <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                    </div>                
+                    <div class="collapse navbar-collapse navbar-ex1-collapse background-blue">
+                    <ul class="nav navbar-nav">
+                        <img id="logo" src="images/logo.png">
+                        <!-- <li class="active"><a href="#">Home</a></li> -->
                         <li><a href="#schedule">Schedule</a></li>
                         <li><a href="#FAQ">FAQ</a></li>
                         <li><a href="#reg-head">Registration</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
-                </nav>
+                </div>
+                </div>
+            </nav>
             </div>
         </header>
+
+   
     <div class="background-dark-blue" style="padding: 1%;"></div>
 
 		<div id="top" data-src="images/Green-arrows.gif" data-position="bottom right" style="height: 901px;">
@@ -72,7 +80,8 @@
                              for a week of creation, advocacy, and of course, prizes. 
                         </p>
                         </div>
-                        <div class="col-md-6 text-center"><img alt="Stephan" src="images/cranium.png" width="320" height="320"></div>
+                        <div class="col-md-6 text-center"><img id="cranium" 
+                            alt="Stephan" src="images/cranium.png" width="320" height="320"></div>
                     </div>
                 </div>
 <br>
@@ -81,61 +90,23 @@
 
         <!-- schedule -->
 <div class="background-blue">
-	<div class="container" style="padding: 3%;"  id="schedule">
+	<div style="padding: 2%;"  id="schedule">
 		<p class="lead">Schedule</p>
 		<hr>
 		<div class="row" style="flex-wrap: nowrap;">
-			<div id="slist">
+			<div style="padding-left: 5%;">
 				<ul class="no-bullets">
-					<!-- <li class="sdropdown" onclick="ExpandS()">
-						<span class="s-title">Sunday 4/8</span>
-					</li>
-					
-					<li class="sdescription" id="Sun">
-						<p>Sunday the Theme of the Hackathon will be announced at Noon!</p>
-					</li> -->
                     <div class="row">
-                    <li>
-                        <img class="scheduleIMG" src="images/1x/sch08.png"></img>
-                    </li>
-                    <!-- 
-					<li class="sdropdown" onclick="ExpandS2()">
-						<span class="s-title">Tuesday 4/10</span>
-					</li>
-
-					<li class="sdescription" id="Tues">
-						<p>Tuesday there will be a Mobile Development Workshop from 12:30pm-2:00pm</p>
-                    </li> 
-                    -->
-                    
-                    <img class="scheduleIMG" src="images/1x/sch10.png"></img>
+                        <li>
+                            <img class="scheduleIMG" src="images/1x/sch08.png"></img>
+                            <img class="scheduleIMG" src="images/1x/sch10.png"></img>
+                        </li>
                     </div>
-
-					<!-- <li class="sdropdown" onclick="ExpandS3()">
-						<span class="s-title">Wednesday 4/11</span>
-					</li>
-
-					<li class="sdescription" id="Wed">
-                        <p>Check-in anytime Wednesday to Register your team and project</p>
-						<p>The 1st floor of the Manhattan library will be open all day for the hackathon participants to 
-                            create</p>
-                    </li>
-                     -->
                      <div class="row">
-                     <li>
-                    <img class="scheduleIMG" src="images/1x/sch11.png"></img>
-                    </li>
-					<!-- <li class="sdropdown" onclick="ExpandS4()">
-						<span class="s-title">Thursday 4/12</span>
-					</li>
-
-					<li class="sdescription" id="Thurs">
-                        <p>Submission deadline is 10am</p>
-                        <p>From 10:00am-12:00pm show off your creations to the world in the expo</p>
-                        <p>From 12:30pm-2:00pm Judges will select winners and allocate prizes!</p>
-                    </li> -->
-                    
-                    <img class="scheduleIMG" src="images/1x/sch12.png"></img>
+                        <li>
+                        <img class="scheduleIMG" src="images/1x/sch11.png"></img>
+                        <img class="scheduleIMG" src="images/1x/sch12.png"></img>
+                        </li>
                     </div>
 				</ul>
 			</div>
@@ -219,7 +190,7 @@
 <div class="background-dark-blue" style="padding: 1%;"></div>
 
 <!-- Registration -->
-<section class="background-blue">
+<div class="background-blue">
 	<div id="reg-head" >
         <h1 class="lead">Registration</h1>
         <hr>
@@ -244,20 +215,21 @@
     <br>
     <br>
     <br>
-    <div id="buttons" id="container">
-            <div id="butt">
-                <a href="https://nyit.givepulse.com/event/70029-Day-of-Giving-at-NYIT"><button id="reg-button" class="btn btn-primary btn-lg actual-button" type="button">Register NYIT Students</button></a>
+    <div id="container">
+        <div class="butt">
+            <a href="https://nyit.givepulse.com/event/70029-Day-of-Giving-at-NYIT"><button id="reg-button" class="btn btn-primary btn-lg actual-button" type="button">Register NYIT Students</button></a>
         </div>
         <br>
         <br>
-    <div id="buttons" id="container">
-            <div id="butt">
+    <div id="container">
+            <div class="butt">
                 <a href="registration.html"><button id="reg-button" class="btn btn-primary btn-lg actual-button" type="button">Register Non-NYIT Students</button></a>
     </div>
-</section>
+</div>
+<br>
 <div class="background-dark-blue" style="padding: 1%;"></div>
 
-<div id="contact">
+<div id="contact" class="background-green">
 	<div class="container" style="padding: 3%;" >
             <h1 class="lead">Contact</h1>
             <hr>
