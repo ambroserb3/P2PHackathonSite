@@ -10,42 +10,48 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-       <!-- Bootstrap CDN -->
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-       <!-- Bootstrap scripts -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <!-- Bootstrap CSS -->
+       <link href="bootstrap.css" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css">
         
         <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="bootstrap.js"></script>
 
     </head>
     <body>
-        <header class="background-blue">
-                <div class="container background-blue">
-                    <div id="branding">
-                        <img id="logo" src="images/logo.png">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="main.html">Home</a></li>
-                            <li><a href="main.html#schedule">Schedule</a></li>
-                            <li><a href="main.html#FAQ">FAQ</a></li>
-                            <li><a href="main.html#reg-head">Registration</a></li>
-                            <li><a href="main.html#contact">Contact Us</a></li>
-                        </ul>
+            <header class="background-blue">
+                    <div class="container">
+                    <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+                        <div class="row">
+                            <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>
+                            </div>                
+                            <div class="collapse navbar-collapse navbar-ex1-collapse background-blue">
+                            <ul class="nav navbar-nav">
+                                <img id="logo" src="images/logo.png">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#schedule">Schedule</a></li>
+                                <li><a href="index.html#FAQ">FAQ</a></li>
+                                <li><a href="index.html#reg-head">Registration</a></li>
+                                <li><a href="index.html#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        </div>
                     </nav>
-                </div>
-        </header>
+                    </div>
+                </header>
         <!-- Form -->
         <div class="form" >
             <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSdPy5QhImND-BS8Zum44pQQ9fDLvQG3D5INOK7gTeXxFhDgEw/viewform?embedded=true"
