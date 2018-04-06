@@ -175,6 +175,13 @@ header a:hover {
 	color: #FFF
 }
 
+#Donate-button {
+    position: relative;
+    text-align: center;
+	font-size: 100%;
+	color: #FFF;
+	margin-bottom: 10%;
+}
 button#reg-button{
     background-color: rgba(61,85,127,0.8);
     background-repeat: no-repeat;
@@ -196,12 +203,28 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding-left: 5%;  padding-r
 	overflow: auto;
 }
 
+.speakerIMG {
+	overflow: auto;
+	width: auto ;
+	max-width: 100% ;
+	height: auto 
+}
+
 #sch{
 	padding-left: 5%;
 }
 @media (max-width:430px) {
 	#sch{
 		padding-left: 0px;
+	}
+}
+
+@media (max-width:600px) {
+	.speakerIMG {
+		max-height: 100vh;
+		max-width: 100%;
+		width: auto;
+		height: auto;
 	}
 }
 
